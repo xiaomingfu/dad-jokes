@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Joke from './Joke';
 import Face from './Face';
 import axios from 'axios';
+import './Jokes.css';
 
 class Jokes extends Component {
     static defaultProps = {
@@ -26,22 +27,18 @@ class Jokes extends Component {
     render() {
         let defaultJoke = this.state.jokes.map(joke => <div>{joke}</div>);
         return (
-            <div className="Joke" >
-                <div className="Joke-header">
-                    <h1 className="Joke-title">Dad <span>Jokes</span></h1>
-                    😂
-                    <button>New Jokes</button>
+            <div className="Jokes" >
+                <div className="Jokes-sidehar">
+                    <h1 className="Jokes-title"><span>Dad </span>Jokes</h1>
+                    <img src='https://assets.dryicons.com/uploads/icon/svg/8927/0eb14c71-38f2-433a-bfc8-23d9c99b3647.svg' />
+                    <button className="Jokes-btn">New Jokes</button>
                 </div>
-                <div className="Joke-content">
-                    <ul>
-                        <li>
-                            <i className="fas fa-arrow-up"></i>
-                            <div>1</div>
-                            <i className="fas fa-arrow-down"></i>
-                            {defaultJoke}
-                            <Face />
-                        </li>
-                    </ul>
+                <div className="Jokes-content">
+                    <i className="fas fa-arrow-up"></i>
+                    <div>1</div>
+                    <i className="fas fa-arrow-down"></i>
+                    {defaultJoke}
+                    <Face />
                 </div>
             </div>
         )
