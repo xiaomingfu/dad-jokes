@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import uuid from 'uuid/v4';
 import Joke from './Joke';
-import Face from './Face';
 import axios from 'axios';
 import './JokeList.css';
 
@@ -54,7 +53,6 @@ class JokeList extends Component {
                 <div className="JokeList-content">
 
                     {defaultJoke}
-                    <Face />
                 </div>
             </div>
         )
