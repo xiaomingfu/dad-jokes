@@ -1,6 +1,7 @@
 .JokeList {
   display: flex;
   width: 80%;
+  min-width: 800px;
   height: 80%;
 }
 
