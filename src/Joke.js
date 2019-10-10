@@ -21,7 +21,7 @@ class Joke extends Component {
     }
     changeEmoji() {
         if (this.props.vote >= 15) {
-            return "rolling_on_the_floor_laughing";
+            return "em em-rolling_on_the_floor_laughing";
         } else if (this.props.vote >= 12) {
             return "em em-laughing";
         } else if (this.props.vote >= 9) {
